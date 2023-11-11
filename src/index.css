@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f5f8;
+}
+main {
+  /* height: 100vh; */
+  max-width: 800px;
+  text-align: center;
+  color: #102a42;
+  margin: 0 auto;
+}
+.loading {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: #102a42;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.title {
+  color: #102a42;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  margin: 3rem 0;
+}
+.underline {
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #2caeba;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* height: 70vh; */
+  padding: 2rem 0;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  background-color: transparent;
+  border: transparent;
+  padding: 4px 18px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  transition: all 0.3s linear;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.active-btn {
+  color: #2caeba;
+  border-left: 2px solid #2caeba;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.details h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.details h2 {
+  background-color: rgba(43, 42, 42, 0.303);
+  width: 30%;
+  text-align: center;
+  border-radius: 4px;
+  padding: 3px 2px;
+  margin: 0.5rem 0;
+  /* display: inline-block; */
+}
+.details .date {
+  font-size: 1.0789rem;
+  margin: 1rem;
+  letter-spacing: 2px;
+}
+.job-desc {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+}
+.job-desc p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.more-btn {
+  margin: 1rem 0;
+  font-size: 1.57rem;
+  padding: 4px 15px;
+  border-radius: 4px;
+  background-color: #2caeba;
+  border: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+}
+.more-btn:hover {
+  background-color: #447579;
+  color: #f1f5f8;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    margin-bottom: 1rem;
+  }
+  .btn-container {
+    flex-direction: row;
+  }
+  .active-btn {
+    color: #2caeba;
+    border: none;
+    border-bottom: 2px solid #2caeba;
+  }
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    /* height: auto; */
+    padding: 0 1rem;
+  }
+}
